@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cash2Cash Admin</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+    <div class="leftpanel">
+    	
+        <div class="logopanel">
+        	<h1><a href="#">Cash2Cash <span>Admin</span></a></h1>
+        </div><!--logopanel-->
+        
+        
+        <div class="leftmenu">        
+            <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>
+                
+                <li class="dropdown"><a href="#"><span class="icon-th-list"></span> Users</a>
+                	<ul>
+                    	<li><a href="all_registered_users.html">All Registered Users</a></li>
+                        <li><a href="users_due_for_merge.html">Users Due for Merging</a></li>
+                        <li><a href="merged_users.html">Merged Users</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Users by Package</a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Starters Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users (Starter Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Starter Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Starter Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Mobile Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Mobile Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Mobile Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Mobile Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Standard Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Standard Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Standard Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Standard Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Boosters Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Boosters Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Boosters Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Boosters Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Starters Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Starter Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Starter Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Starter Plan)</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Boosters Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Boosters Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Boosters Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Boosters Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Investors Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Investors Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Investors Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Investors Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Achievers Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Achievers Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Achievers Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Achievers Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Tycoons Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Tycoons Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Tycoons Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Tycoons Plan)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#"><span class="icon-align-justify"></span> Enterpreneurs Plan</a>
+                            <ul>
+                                <li><a href="#"><span class="icon-th-list"></span> All users(Enterpreneurs Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Unmerged Users(Enterpreneurs Plan)</a></li>
+                                <li><a href="#"><span class="icon-th-list"></span> Merge Users(Enterpreneurs Plan)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+				
+                <li><a href="#"><span class="icon-align-justify"></span>Fake POP reports</a></li>
+                <li><a href="#"><span class="icon-align-justify"></span>Blocked Users</a></li>
+                <li><a href="#"><span class="icon-align-justify"></span>Manage Notification</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="#" class="showmenu"></a>
+            
+            <div class="headerright">
+            	
+               
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        	<ul class="skins">
+                <li><a href="default" class="skin-color default"></a></li>
+                <li><a href="orange" class="skin-color orange"></a></li>
+                <li><a href="dark" class="skin-color dark"></a></li>
+                <li>&nbsp;</li>
+                <li class="fixed selected"><a href="#" class="skin-layout fixed"></a></li>
+                <li class="wide"><a href="#" class="skin-layout wide"></a></li>
+            </ul><!--skins-->
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>PGD</h1> <span>Applicants for PGD programm...</span>
+        </div><!--pagetitle-->
+        
+        <div class="maincontent">
+        	<div class="contentinner">
+            
+            	<table class="table table-bordered" id="dyntable">
+                    <colgroup>
+                        <col class="con0" style="align: center; width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                          	<th class="head0 nosort"><input type="checkbox" class="checkall" /></th>
+                            <th class="head0">Full Name</th>
+                            <th class="head1">Email</th>
+                            <th class="head0">Package</th>
+                            <th class="head1">Status</th>
+                            <th class="head0"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            <input type="checkbox" />
+                          </span></td>
+                            <td>Tessy Ben</td>
+                            <td>ben@gmail.com</td>
+                            <td>Mobile Plan</td>
+                            <td class="center">Qualify for Merging</td>
+                            <td class="center"><a href="#" class="btn"><span class="icon-edit"></span> Process</a></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <div class="divider15"></div>
+
+                <div class="divider15"></div>
+          
+   				<div class="divider15"></div>
+
+                
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Katniss Premium Admin Template v1.0</div>
+    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>
+    </div><!--footer-->
+    
+</div><!--mainwrapper-->
+
+</body>
+</html>
